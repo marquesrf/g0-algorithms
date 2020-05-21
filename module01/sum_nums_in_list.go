@@ -1,9 +1,8 @@
 package module01
 
 func SumNumsInList(list []int) int {
-	var sum int
-	for _, i := range list {
-		sum += i
+	if len(list) == 0 {
+		return 0
 	}
-	return sum
+	return list[0] + SumNumsInList(list[1:])
 }
