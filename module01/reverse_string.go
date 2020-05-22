@@ -1,13 +1,9 @@
 package module01
 
-import (
-	"strings"
-)
-
 func Reverse(someString string) string {
-	var sb strings.Builder
-	for i := len(someString) - 1; i >= 0; i-- {
-		sb.WriteByte(someString[i])
+	var reverse string
+	for _, r := range someString {
+		reverse = string(r) + reverse
 	}
-	return sb.String()
+	return reverse
 }
