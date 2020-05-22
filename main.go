@@ -8,12 +8,6 @@ import (
 func main() {
 
 	// Examples:
-	fmt.Println(mdl01.SumNumsInList([]int{1, 2, 3, 4, 5}))    // 15
-	fmt.Println(mdl01.SumNumsInList([]int{3, 3, 3, 3, 3}))    // 15
-	fmt.Println(mdl01.SumNumsInList([]int{3, 5, 3, 5, 3}))    // 19
-	fmt.Println(mdl01.SumNumsInList([]int{4, 2, 22, -10, 8})) // 26
-
-	// Emplty lists!
-	fmt.Println(mdl01.SumNumsInList(nil))     // 0
-	fmt.Println(mdl01.SumNumsInList([]int{})) // 0
+	fmt.Println(mdl01.Reverse("cat"))      // tac
+	fmt.Println(mdl01.Reverse("alphabet")) // tebahpla
 }
